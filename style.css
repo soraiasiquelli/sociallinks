@@ -1,0 +1,150 @@
+*{
+    font-weight: 400;
+}
+body{
+    background-color: #7d7874;
+}
+section.secaomain{
+    width: 50%;
+    height: 100%;
+    padding-bottom: 20px;
+    margin: auto;
+    color: white;
+    margin-top: 5%;
+    background-color: #3d3e40;
+    border-radius: 20px;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    
+    
+}
+
+header h2{
+    padding: 50px;
+}
+
+#btnnovolink {
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid white;
+    letter-spacing: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: auto;
+    display: block; /* Ensures that the link behaves as a block element */
+    text-align: center; /* Aligns the content (the button) to the center */
+}
+
+#btnnovolink:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% quando o mouse passa sobre o botão */
+
+}
+label{
+    font-size: 22px;
+    margin-left: 25%;   
+    letter-spacing: 2px;
+
+}
+select.plataforma{
+    width: 50%;
+    height: 5vh;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    margin: auto;
+    border: none;
+    display: block; /* Ensures that the link behaves as a block element */
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+:optional{
+    color:  #025FE0;;
+    font-weight: 500;
+    text-align: left;
+    height: 5vh;
+
+
+}
+
+input[type = "text"], input[type = "email"]{
+    width: 50%;
+    height: 5vh;
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    border: none;
+    margin: auto;
+    display: block; /* Ensures that the link behaves as a block element */
+    margin-top: 20px;
+    
+
+}
+ #btnProximo, .button{
+    width: 50%;
+    height: 5vh;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    margin: auto;
+    border: none;
+    display: block; /* Ensures that the link behaves as a block element */
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #025FE0;
+ }
+
+ #btnProximo:hover{
+    transform: scale(1.1); /* Aumenta o tamanho em 10% quando o mouse passa sobre o botão */
+
+}
+
+#imagemSelecionada{
+    margin-left: 35%;
+}
+
+
+#paglinks{
+    text-align: center;
+    display: none;
+    width: 40%;
+
+}
+#imagemperfil{
+    width: 30%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5%;
+}
+#nomeperfil{
+    font-size: 30px;
+}
+#sobrenome{
+    font-size: 28px;
+}
+#emailink{
+    font-size: 25px;
+}
+a{
+    color: white;
+}
+#p_links{
+    font-size: 18px;
+    color: white ;
+}
