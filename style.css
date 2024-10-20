@@ -1,56 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 *{
     font-weight: 400;
+    font-family: 'Poppins', sans-serif !important;
+
 }
 body{
-    background-color: #7d7874;
+    background-color: white;
 }
-section.secaomain{
-    width: 50%;
+section#sectlink{
+    display: flex;
+    margin-top: 5% !important;
+    width: 75%;
+    margin: auto;
+    border: 1px solid black;
+}
+div#iniciolink{
+    width: 90%;
+}
+#cabecalhoaddlink{
+    background-image: url(881.jpg);
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço do elemento */
+    background-position: center; /* Centraliza a imagem */
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Garante que o pseudo-elemento não exceda os limites */
+    margin-bottom: 5%;
+}
+div#imagemlink > img{
+    width: 80%;
+    margin:auto;
+    margin-top: 5%
+}
+section.secaomain, #sect_addlink{
+    width: 70%;
     height: 100%;
     padding-bottom: 20px;
     margin: auto;
-    color: white;
-    margin-top: 5%;
-    background-color: #3d3e40;
+    color: black;
+    border: 1px solid #0563FA;
+    margin-top: 6%;
+    background-color: white;
     border-radius: 20px;
     align-items: center;
 }
 
+#sect_addlink{
+    width: 60%;
+}
 header{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 5px;
     
     
 }
 
 header h2{
-    padding: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+    margin-top: 25px !important;
 }
 
-#btnnovolink {
+header p{
+    font-size: 16px;
+}
+#sect_addlink{
+    border: 1px solid black;
     width: 50%;
-    height: 50px;
-    color: white;
-    font-size: 18px;
+}
+
+#sect_addlink > h2{
+    text-align: center;
+
+
+}
+
+
+
+#btnnovolink, #btn_vamosla, #btn_adicionarlink{
+    width: 30%;
+    height: 35px;
+    color: black;
+    font-size: 14px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 2px solid white;
-    letter-spacing: 10px;
+    border: 2px solid black;
     background-color: transparent;
     border-radius: 10px;
     margin: auto;
     display: block; /* Ensures that the link behaves as a block element */
     text-align: center; /* Aligns the content (the button) to the center */
+    margin-top: 5%;
+    font-weight: 500 !important;
 }
-
+#btn_adicionarlink{
+    margin-bottom: 20px;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+}
 #btnnovolink:hover{
     transform: scale(1.1); /* Aumenta o tamanho em 10% quando o mouse passa sobre o botão */
 
 }
 label{
-    font-size: 22px;
+    font-size: 16px;
     margin-left: 25%;   
     letter-spacing: 2px;
 
@@ -58,7 +117,7 @@ label{
 select.plataforma{
     width: 50%;
     height: 5vh;
-    font-size: 18px;
+    font-size: 16px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
     margin: auto;
@@ -67,15 +126,22 @@ select.plataforma{
     text-align: left;
     margin-top: 20px;
     margin-bottom: 10px;
+    border: 1px solid black;
+
+}
+select.plataforma:hover{
+    border: 1px solid black;
+
 }
 
 :optional{
-    color:  #025FE0;;
+    border: 1px solid rgb(198, 198, 198) !important;
     font-weight: 500;
     text-align: left;
     height: 5vh;
-
-
+}
+:optional:hover{
+    border: 1px solid black;
 }
 
 input[type = "text"], input[type = "email"]{
@@ -83,10 +149,10 @@ input[type = "text"], input[type = "email"]{
     height: 5vh;
     color: black;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
-    border: none;
+    border: 1px solid black;
     margin: auto;
     display: block; /* Ensures that the link behaves as a block element */
     margin-top: 20px;
@@ -148,3 +214,4 @@ a{
     font-size: 18px;
     color: white ;
 }
+
