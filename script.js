@@ -53,6 +53,7 @@ function criarLink() {
 
     linkTexts.push(linkText);
 
+
     // Cria e adiciona o botão Proximo após o link gerado
     btnProximo.style.display = "block"; // Mostra o botão
     addlink.appendChild(btnProximo); // Adiciona o botão ao final da seção
@@ -64,6 +65,7 @@ document.getElementById("btnProximo").addEventListener("click", function () {
     sectinfo.style.display = "block";
     sectlink.style.display = "none";
     btnProximo.style.display = "none"; // Esconde o botão novamente
+    addlink.style.display = "none"
 });
 
 document.getElementById("btn_vamosla").addEventListener("click", function () {

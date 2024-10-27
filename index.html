@@ -55,25 +55,19 @@
         </header>
 
 
-        <label for="fotoescolhida">Escolha a foto do perfil:</label>
-        <input type="file" id="fotoescolhida">
-        <br>
-        <img id="imagemSelecionada" src="#" alt="Imagem Selecionada" style="display:none; max-width: 200px;">
-        <br>
-        <br>
-
-        <label for="nome">Primeiro Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <BR></BR>
-        <label for="sobrenome">Segundo Nome: </label>
-        <input type="text" name="segundonome" id="segundonome">
-        <br>
-        <label for="emai=l">Email: </label>
-        <br>
-        <input type="email" name="email" id="email">
-
-
-        <input type="button" value="CONCLUÍDO!" class="button" id="concluido">
+        <form action="" id="form_informacoes">
+            <label for="fotoescolhida">Escolha a foto do perfil:</label>
+            <input type="file" id="fotoescolhida">
+            <br>
+            <img id="imagemSelecionada" src="#" alt="Imagem Selecionada" style="display:none; max-width: 200px;">
+            <label for="nome">Primeiro Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <label for="sobrenome">Segundo Nome: </label>
+            <input type="text" name="segundonome" id="segundonome">
+            <label for="emai=l">Email: </label>
+            <input type="email" name="email" id="email">
+            <input type="button" value="CONCLUÍDO!" class="button" id="concluido">
+        </form>
 
 
     </section>
@@ -83,9 +77,13 @@
 
         <img src="" alt="" id="imagemperfil">
         <h2 id="nomeperfil">   </h2>
+        <br>
         <h3 id="sobrenome"></h3>
+        <br>
         <h4 id="emaillink"></h4>
+        <br>
         <p id="p_links"></p>
+
         <p id="plataformaImg"></p>
 
     </section>
