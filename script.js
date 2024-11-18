@@ -3,6 +3,7 @@ var btn_vamosla = document.getElementById("btn_vamosla");
 var addlink = document.getElementById("sect_addlink");
 var sectinfo = document.getElementById("sectinfo");
 var btnProximo = document.getElementById("btnProximo");
+var secaopaglinks = document.getElementById("paglinks")
 var linkText; // Definindo a variável linkText fora das funções para torná-la global
 var linkTexts = []; // Array global para armazenar os links
 var selectPlataforma; // Definindo selectPlataforma globalmente
@@ -18,6 +19,7 @@ var imagemperfil = document.getElementById("img");
 sectinfo.style.display = "none";
 addlink.style.display = "none";
 btnProximo.style.display = "none"; // Inicialmente escondido
+paglinks.style.display = "none"
 
 function criarLink() {
     var labelLegenda = document.createElement("label");
@@ -127,16 +129,20 @@ function paglink() {
     var p_links = document.getElementById("p_links");
     p_links.innerHTML = ""; // Limpa o conteúdo anterior
 
-    linkTexts.forEach(function (linkText) {
+    linkTexts.forEach(function (linkText, index) {
+        // Obter a plataforma selecionada (Instagram, Facebook, etc.)
+        var plataforma = document.querySelectorAll(".plataforma")[index].value;
+
         var link = document.createElement("a");
-        link.href = linkText.value;
-        link.textContent = linkText.value;
+        link.href = linkText.value; // O valor inserido no campo de link
+        link.target = "_blank"; // Abre o link em uma nova aba
+        link.textContent = plataforma; // O texto do link será o nome da plataforma
         p_links.appendChild(link);
         p_links.appendChild(document.createElement("br"));
     });
 
     // Exibe a imagem selecionada
-    if (imageURL) { // verifica se tem algum valor e caso tenha executa o código
+    if (imageURL) {
         var imagemperfil = document.getElementById("imagemperfil");
         imagemperfil.src = imageURL;
         imagemperfil.style.display = "block";
